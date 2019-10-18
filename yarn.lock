@@ -2049,7 +2049,7 @@ graphql-import@0.7.1, graphql-import@^0.7.0:
   resolved "https://registry.yarnpkg.com/graphql-import/-/graphql-import-0.7.1.tgz#4add8d91a5f752d764b0a4a7a461fcd93136f223"
   integrity sha512-YpwpaPjRUVlw2SN3OPljpWbVRWAhMAyfSba5U47qGMOSsPLi2gYeJtngGpymjm9nk57RFWEpjqwh4+dpYuFAPw==
   dependencies:
-    lodash "^4.17.4"
+    lodash "^4.17.13"
     resolve-from "^4.0.0"
 
 graphql-middleware@4.0.1:
