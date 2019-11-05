@@ -5,7 +5,7 @@ export default {
     fullName: parent => {
       return `${parent.firstName} ${parent.lastName}`;
     },
-    amIFollowing: async (parent, _, { request }) => {
+    isFollowing: async (parent, _, { request }) => {
       const { user } = request;
       const { id: parentId } = parent;
       try {
@@ -13,11 +13,10 @@ export default {
           AND: [{ id: parentId }, { followers_some: { id: user.id } }]
         });
       } catch {
-        console.log("error");
         return false;
       }
     },
-    itsMe: (parent, _, { request }) => {
+    isSelf: (parent, _, { request }) => {
       const { user } = request;
       const { id: parentId } = parent;
       return user.id === parentId;
