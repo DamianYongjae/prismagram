@@ -17,7 +17,7 @@ Instagram Clone with Express + Prisma + React and React Native
 - [x] see user profile
 - [x] see my profile
 - [x] see the full photo
-- [ ] upload a photos
+- [x] upload a photos
 - [ ] edit the photo (delete )
 - [ ] see the feed
 - [ ] see rooms
