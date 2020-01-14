@@ -1,6 +1,6 @@
 type User {
   id: ID! @id
-  avatar: String
+  avatar: String @default(value: "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjT36_0o4PnAhVhUd8KHVv7ARkQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.strangelyinbetween.com%2Fprofile%2Ffavorite_person&psig=AOvVaw1xSI4WkOPNwKWTqEqDLRdB&ust=1579097795338447")
   username: String! @unique
   email: String! @unique
   lastName: String @default(value: "")
