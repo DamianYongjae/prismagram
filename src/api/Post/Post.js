@@ -29,6 +29,11 @@ export default {
       await prisma
         .likesConnection({ where: { post: { id: parent.id } } })
         .aggregate()
+        .count(),
+    commentCount: async parent =>
+      await prisma
+        .commentsConnection({ where: { post: { id: parent.id } } })
+        .aggregate()
         .count()
   }
 };
