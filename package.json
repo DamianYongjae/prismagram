@@ -10,12 +10,9 @@
     "@babel/core": "^7.9.6",
     "@babel/node": "^7.6.2",
     "@babel/preset-env": "^7.6.2",
-    "@babel/register": "^7.9.0",
     "@babel/runtime": "^7.9.6",
     "acorn": "^5.7.4",
     "aws-sdk": "^2.672.0",
-    "babel-core": "^7.0.0-bridge",
-    "babel-loader": "^8.1.0",
     "copy": "^0.3.2",
     "dotenv": "^8.1.0",
     "graphql-tools": "^4.0.5",
@@ -47,8 +44,5 @@
     "build": "babel src -d build",
     "postbuild": "cd src && npx copy ./api/**/*.graphql ../build/api/",
     "start": "nodemon --exec babel-node build/server.js"
-  },
-  "resolutions": {
-    "babel-core": "7.0.0-bridge.0"
   }
 }
